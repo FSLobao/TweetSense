@@ -1,0 +1,1938 @@
+
+<html>
+    <head>
+        <link rel="stylesheet" href="./css/bootstrap.min.css">
+        <style>body{ margin:0 100; background:whitesmoke; }</style>
+    </head>
+    <body>
+        <h1>Twitter Analist </h1>
+        <h2>TWEET TREND: Ammount of tweet in a given time period and label, expressend in total and per sentiment analisis value</h2>
+        <table class="table table-striped">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>QueryLabel</th>
+      <th>TimeStart</th>
+      <th>TimeStop</th>
+      <th>TweetCount</th>
+      <th>-5</th>
+      <th>-4</th>
+      <th>-3</th>
+      <th>-2</th>
+      <th>-1</th>
+      <th>1</th>
+      <th>2</th>
+      <th>3</th>
+      <th>4</th>
+      <th>5</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>emt</td>
+      <td>2018-06-28 11:08:53</td>
+      <td>2018-06-27 23:08:54</td>
+      <td>28.0</td>
+      <td>0.0</td>
+      <td>2.0</td>
+      <td>3.0</td>
+      <td>6.0</td>
+      <td>17.0</td>
+      <td>18.0</td>
+      <td>3.0</td>
+      <td>6.0</td>
+      <td>1.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>emt</td>
+      <td>2018-06-27 23:08:53</td>
+      <td>2018-06-26 11:08:54</td>
+      <td>72.0</td>
+      <td>5.0</td>
+      <td>2.0</td>
+      <td>8.0</td>
+      <td>12.0</td>
+      <td>45.0</td>
+      <td>43.0</td>
+      <td>12.0</td>
+      <td>11.0</td>
+      <td>4.0</td>
+      <td>2.0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>emt</td>
+      <td>2018-06-26 11:08:53</td>
+      <td>2018-06-24 11:08:54</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>emt</td>
+      <td>2018-06-24 11:08:53</td>
+      <td>2018-06-20 11:08:54</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>emt</td>
+      <td>2018-06-20 11:08:53</td>
+      <td>2018-05-24 20:14:20</td>
+      <td>1039.0</td>
+      <td>16.0</td>
+      <td>34.0</td>
+      <td>93.0</td>
+      <td>155.0</td>
+      <td>741.0</td>
+      <td>671.0</td>
+      <td>182.0</td>
+      <td>122.0</td>
+      <td>27.0</td>
+      <td>37.0</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>metro</td>
+      <td>2018-06-28 11:08:53</td>
+      <td>2018-06-27 23:08:54</td>
+      <td>12.0</td>
+      <td>0.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>2.0</td>
+      <td>8.0</td>
+      <td>8.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>0.0</td>
+      <td>2.0</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>metro</td>
+      <td>2018-06-27 23:08:53</td>
+      <td>2018-06-26 11:08:54</td>
+      <td>29.0</td>
+      <td>0.0</td>
+      <td>3.0</td>
+      <td>1.0</td>
+      <td>10.0</td>
+      <td>15.0</td>
+      <td>16.0</td>
+      <td>5.0</td>
+      <td>6.0</td>
+      <td>2.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>metro</td>
+      <td>2018-06-26 11:08:53</td>
+      <td>2018-06-24 11:08:54</td>
+      <td>46.0</td>
+      <td>2.0</td>
+      <td>5.0</td>
+      <td>5.0</td>
+      <td>12.0</td>
+      <td>22.0</td>
+      <td>31.0</td>
+      <td>6.0</td>
+      <td>7.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>metro</td>
+      <td>2018-06-24 11:08:53</td>
+      <td>2018-06-20 11:08:54</td>
+      <td>13.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>2.0</td>
+      <td>1.0</td>
+      <td>10.0</td>
+      <td>12.0</td>
+      <td>1.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>metro</td>
+      <td>2018-06-20 11:08:53</td>
+      <td>2018-05-24 20:14:20</td>
+      <td>198.0</td>
+      <td>4.0</td>
+      <td>7.0</td>
+      <td>19.0</td>
+      <td>24.0</td>
+      <td>144.0</td>
+      <td>106.0</td>
+      <td>36.0</td>
+      <td>33.0</td>
+      <td>10.0</td>
+      <td>13.0</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>valenbici</td>
+      <td>2018-06-28 11:08:53</td>
+      <td>2018-06-27 23:08:54</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>valenbici</td>
+      <td>2018-06-27 23:08:53</td>
+      <td>2018-06-26 11:08:54</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>valenbici</td>
+      <td>2018-06-26 11:08:53</td>
+      <td>2018-06-24 11:08:54</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>valenbici</td>
+      <td>2018-06-24 11:08:53</td>
+      <td>2018-06-20 11:08:54</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>valenbici</td>
+      <td>2018-06-20 11:08:53</td>
+      <td>2018-05-24 20:14:20</td>
+      <td>39.0</td>
+      <td>0.0</td>
+      <td>4.0</td>
+      <td>6.0</td>
+      <td>6.0</td>
+      <td>23.0</td>
+      <td>14.0</td>
+      <td>12.0</td>
+      <td>6.0</td>
+      <td>4.0</td>
+      <td>3.0</td>
+    </tr>
+  </tbody>
+</table>
+        <h2>TOP TWEETS - Top tweets defined by the ammount of retweet in a given time period and label</h2>
+        <table class="table table-striped">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>QueryLabel</th>
+      <th>TimeStart</th>
+      <th>TimeStop</th>
+      <th>Top</th>
+      <th>Retweet</th>
+      <th>TweetID</th>
+      <th>TweetText</th>
+      <th>Positive Sentiment</th>
+      <th>Negative Sentiment</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>emt</td>
+      <td>2018-06-28 11:08:53</td>
+      <td>2018-06-27 23:08:54</td>
+      <td>1</td>
+      <td>36.0</td>
+      <td>1.012206e+18</td>
+      <td>!PAREMOS ESTA LOCURA! Proponen q SÓLO tenga COCHE QUIEN TENGA GARAJE \n\n Afines a Grezzi plantean además TASAS para ACCEDER al CENTRO y que BICIS puedan ir ¡en CONTRADIRECCIÓN!, además de poder ¡SALTARSE los 🚦 en ROJO!\n\n¡YA ESTÁ BIEN! FIRMEMOS Y DIFUNDAMOS https://t.co/DAWaJgkg3x</td>
+      <td>2.0</td>
+      <td>-1.0</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>emt</td>
+      <td>2018-06-28 11:08:53</td>
+      <td>2018-06-27 23:08:54</td>
+      <td>2</td>
+      <td>6.0</td>
+      <td>1.012263e+18</td>
+      <td>El colapso generado en #Valéncia por las políticas de Ribó y Grezzi obligan a los conductores a buscar alternativas de circulación por caminos rurales. https://t.co/HQIk30ISwE</td>
+      <td>1.0</td>
+      <td>-2.0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>emt</td>
+      <td>2018-06-28 11:08:53</td>
+      <td>2018-06-27 23:08:54</td>
+      <td>3</td>
+      <td>2.0</td>
+      <td>1.012259e+18</td>
+      <td>#InfoEMT: A partir del proper dimarts 3 de juliol, millorem el servici a les platges. https://t.co/1kL4zPBZsf</td>
+      <td>1.0</td>
+      <td>-1.0</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>emt</td>
+      <td>2018-06-28 11:08:53</td>
+      <td>2018-06-27 23:08:54</td>
+      <td>4</td>
+      <td>1.0</td>
+      <td>1.012281e+18</td>
+      <td>⚠️⭕️TANCADA a la circulació la Plaça de l'Ajuntament, entre Sang i Periodista Azzati, per manifestació.</td>
+      <td>1.0</td>
+      <td>-1.0</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>emt</td>
+      <td>2018-06-27 23:08:53</td>
+      <td>2018-06-26 11:08:54</td>
+      <td>1</td>
+      <td>6.0</td>
+      <td>1.011968e+18</td>
+      <td>🚍@VlcMobilitat adaptarà 17 parades més de l'@emtvalencia i impulsarà les franges tacte-visuals en altres 169 parades. https://t.co/qXRg2W5pIB https://t.co/OhFlzngFBG</td>
+      <td>1.0</td>
+      <td>-1.0</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>emt</td>
+      <td>2018-06-27 23:08:53</td>
+      <td>2018-06-26 11:08:54</td>
+      <td>2</td>
+      <td>3.0</td>
+      <td>1.011990e+18</td>
+      <td>La @emtvalencia alarga las líneas 95 y 18 hacia la playa desde Malilla, Sant Marcel·lí y Nazaret https://t.co/7yBRwPTDIM Por @josepbartual</td>
+      <td>1.0</td>
+      <td>-1.0</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>emt</td>
+      <td>2018-06-27 23:08:53</td>
+      <td>2018-06-26 11:08:54</td>
+      <td>3</td>
+      <td>2.0</td>
+      <td>1.012079e+18</td>
+      <td>@Kale_Barraka "Kambiar Todo Para Que No Kambie Kanal 9".\n\nIl Gattopardo, Giuseppe Grezzi di Lampedusa.</td>
+      <td>1.0</td>
+      <td>-1.0</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>emt</td>
+      <td>2018-06-27 23:08:53</td>
+      <td>2018-06-26 11:08:54</td>
+      <td>4</td>
+      <td>1.0</td>
+      <td>1.011877e+18</td>
+      <td>Como se puede observar en esta pegatina de la @emtvalencia claramente confirman la fantástica gestión (tono irónico) de @joanribo y @giuseppegrezzi algo que no sorprende a nadie más que a los incrédulos que sin votarles les dimos un voto de confianza y fallan estrepitosamente https://t.co/jJ33x0OVjk</td>
+      <td>3.0</td>
+      <td>-4.0</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>emt</td>
+      <td>2018-06-27 23:08:53</td>
+      <td>2018-06-26 11:08:54</td>
+      <td>5</td>
+      <td>1.0</td>
+      <td>1.012041e+18</td>
+      <td>@sgalberto Bona vesprada, la freqüència programada de la Línia 6 són 11-12 minuts. Ens consta una incidència que ha afectat l'horari. Salutacions</td>
+      <td>1.0</td>
+      <td>-1.0</td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td>emt</td>
+      <td>2018-06-20 11:08:53</td>
+      <td>2018-05-24 20:14:20</td>
+      <td>1</td>
+      <td>73.0</td>
+      <td>1.001372e+18</td>
+      <td>El gobierno de Ribó bate récords de contratos a dedo 👉💶. Los que tanto criticaban y ahora no dejan de dar contratos sin concurso, como los 21.000 euros de Grezzi, el tope, para su bicifest.</td>
+      <td>2.0</td>
+      <td>-4.0</td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td>emt</td>
+      <td>2018-06-20 11:08:53</td>
+      <td>2018-05-24 20:14:20</td>
+      <td>2</td>
+      <td>54.0</td>
+      <td>1.004721e+18</td>
+      <td>“Ribó y Grezzi NO cumplen sus COMPROMISos”, así han aparecido hoy algunas paradas de la EMT con quejad de trabajadores y usuarios. Pero Grezzi te dice que va todo de maravilla.</td>
+      <td>3.0</td>
+      <td>-2.0</td>
+    </tr>
+    <tr>
+      <th>22</th>
+      <td>emt</td>
+      <td>2018-06-20 11:08:53</td>
+      <td>2018-05-24 20:14:20</td>
+      <td>3</td>
+      <td>53.0</td>
+      <td>1.004277e+18</td>
+      <td>La EMT pierde 637.000 viajeros. Así responden los usurarios a los cambios de líneas de Grezzi. Se supone que Compromís venía a fomentar el transporte público y sólo está consiguiendo que lo use menos gente. Vaya éxito, Grezzi.</td>
+      <td>2.0</td>
+      <td>-1.0</td>
+    </tr>
+    <tr>
+      <th>23</th>
+      <td>emt</td>
+      <td>2018-06-20 11:08:53</td>
+      <td>2018-05-24 20:14:20</td>
+      <td>4</td>
+      <td>44.0</td>
+      <td>1.001455e+18</td>
+      <td>Escucha Grezzi lo que tienen que decir los vecinos de #Nazaret: denuncian la peligrosidad y el mal estado del carri bici. En lugar de hacer carriles sin planificación, empieza por arreglar los ya existentes:</td>
+      <td>1.0</td>
+      <td>-3.0</td>
+    </tr>
+    <tr>
+      <th>24</th>
+      <td>emt</td>
+      <td>2018-06-20 11:08:53</td>
+      <td>2018-05-24 20:14:20</td>
+      <td>5</td>
+      <td>41.0</td>
+      <td>1.004683e+18</td>
+      <td>Detenido un conductor de la @emtvalencia por masturbarse mientras conducía un autobús</td>
+      <td>1.0</td>
+      <td>-1.0</td>
+    </tr>
+    <tr>
+      <th>25</th>
+      <td>metro</td>
+      <td>2018-06-28 11:08:53</td>
+      <td>2018-06-27 23:08:54</td>
+      <td>1</td>
+      <td>1.0</td>
+      <td>1.012163e+18</td>
+      <td>@valencia_amara @Metro_TV @cadarmerah Disitulah kebesaran jiwa seseorang apalagi Calon pemimpin bisa dilihat.\r\nDan skrg ia sdh diperlihatkan ternyata jiwanya kerdil.\r\nUntung kalah.</td>
+      <td>1.0</td>
+      <td>-1.0</td>
+    </tr>
+    <tr>
+      <th>30</th>
+      <td>metro</td>
+      <td>2018-06-27 23:08:53</td>
+      <td>2018-06-26 11:08:54</td>
+      <td>1</td>
+      <td>26.0</td>
+      <td>1.011869e+18</td>
+      <td>Hoy en el #CaféJoserra el candidato del PP tiene los redaños de hablar de @sanchezcastejon como "El Presidente Muerte" por la ley de la eutanasia... De cómo gestionó su partido casos como el #Yak-42, del accidente del metro de Valencia,  de ETA y el #11M...  Lo ha debido olvidar. https://t.co/RoCzCpl0WU</td>
+      <td>1.0</td>
+      <td>-2.0</td>
+    </tr>
+    <tr>
+      <th>31</th>
+      <td>metro</td>
+      <td>2018-06-27 23:08:53</td>
+      <td>2018-06-26 11:08:54</td>
+      <td>2</td>
+      <td>11.0</td>
+      <td>1.011964e+18</td>
+      <td>Sé que no va a leerme mucha gente, pero The Oräcles y yo tocamos juto a @mantequillarock y  @Anthr_Influence el 21 de Julio en la sala Magazine (cerca de la parada de metro de Àngel Guimerà, Valencia)</td>
+      <td>1.0</td>
+      <td>-1.0</td>
+    </tr>
+    <tr>
+      <th>32</th>
+      <td>metro</td>
+      <td>2018-06-27 23:08:53</td>
+      <td>2018-06-26 11:08:54</td>
+      <td>3</td>
+      <td>6.0</td>
+      <td>1.011621e+18</td>
+      <td>#Ahora| A propósito de los #100DiasATodaMaquina emanados por @TransporteGobVe, bajo las sendas de @NicolasMaduro la Presidenta del Metro de Valencia Yolyemil Rodríguez, tras alianza con IFE y Corpologística traslada booguies hacia la ciudad de Caracas para su reperfilado https://t.co/AImJaZCi2v</td>
+      <td>1.0</td>
+      <td>-1.0</td>
+    </tr>
+    <tr>
+      <th>33</th>
+      <td>metro</td>
+      <td>2018-06-27 23:08:53</td>
+      <td>2018-06-26 11:08:54</td>
+      <td>4</td>
+      <td>5.0</td>
+      <td>1.011619e+18</td>
+      <td>Metro de Valencia ejecuta 2do traslado de booguies para su mantenimiento y reperfilado, cumpliendo así las líneas del presidente @NicolasMaduro y @TransporteGobVe en el marco del Plan de Alto Impacto #100DiasATodaMaquina que pretende consolidar aun más al sector transporte https://t.co/lPtEHtzGEw</td>
+      <td>2.0</td>
+      <td>-1.0</td>
+    </tr>
+    <tr>
+      <th>34</th>
+      <td>metro</td>
+      <td>2018-06-27 23:08:53</td>
+      <td>2018-06-26 11:08:54</td>
+      <td>5</td>
+      <td>4.0</td>
+      <td>1.011758e+18</td>
+      <td>🔴Al momento| Llegan unidades reperfiladas del sistema de ruedas de Metro de Valencia, desde la sede del IFE. Dando cumplimiento a las metas trazadas en materia del mantenimiento de  trenes, con el firme propósito de optimizar el servicio.\r\n#100diasdealtoimpacto #PlanAltoImpacto https://t.co/1bc4ruCRcI</td>
+      <td>3.0</td>
+      <td>-2.0</td>
+    </tr>
+    <tr>
+      <th>35</th>
+      <td>metro</td>
+      <td>2018-06-26 11:08:53</td>
+      <td>2018-06-24 11:08:54</td>
+      <td>1</td>
+      <td>38.0</td>
+      <td>1.011547e+18</td>
+      <td>q cuco el metro d valència jo no havia vist açò 💜💜 https://t.co/8wgxtsvVtb</td>
+      <td>1.0</td>
+      <td>-2.0</td>
+    </tr>
+    <tr>
+      <th>36</th>
+      <td>metro</td>
+      <td>2018-06-26 11:08:53</td>
+      <td>2018-06-24 11:08:54</td>
+      <td>2</td>
+      <td>5.0</td>
+      <td>1.011344e+18</td>
+      <td>Me parecía extraño que alguien como Cospedal no utilizase a las víctimas de ETA como arma política.\r\nOjalá se acordase así de las del ALVIA, Metro de Valencia, YAK42... https://t.co/1sw7WFwuep</td>
+      <td>1.0</td>
+      <td>-1.0</td>
+    </tr>
+    <tr>
+      <th>37</th>
+      <td>metro</td>
+      <td>2018-06-26 11:08:53</td>
+      <td>2018-06-24 11:08:54</td>
+      <td>3</td>
+      <td>4.0</td>
+      <td>1.011239e+18</td>
+      <td>https://t.co/r0lcO8WAwS @metrovalencia @GVAfgv @CERMICV @Cermi_Estatal</td>
+      <td>1.0</td>
+      <td>-1.0</td>
+    </tr>
+    <tr>
+      <th>38</th>
+      <td>metro</td>
+      <td>2018-06-26 11:08:53</td>
+      <td>2018-06-24 11:08:54</td>
+      <td>4</td>
+      <td>4.0</td>
+      <td>1.011342e+18</td>
+      <td>Se efectua patrullaje con interaccion (PACIN) en la estación del Metro la Cedeño en la ciudad de Valencia, con la finalidad de atender las necesidades de los ciudadanos y brindar seguridad preventiva. #25Jun https://t.co/1v9gKQ7Njc</td>
+      <td>2.0</td>
+      <td>-1.0</td>
+    </tr>
+    <tr>
+      <th>39</th>
+      <td>metro</td>
+      <td>2018-06-26 11:08:53</td>
+      <td>2018-06-24 11:08:54</td>
+      <td>5</td>
+      <td>4.0</td>
+      <td>1.011300e+18</td>
+      <td>via @ahinamendez:  @NEGROGADEA le acaban de robar el tlf a mi esposo en el metro de Valencia y les comunicó para que estén mosca</td>
+      <td>1.0</td>
+      <td>-1.0</td>
+    </tr>
+    <tr>
+      <th>45</th>
+      <td>metro</td>
+      <td>2018-06-20 11:08:53</td>
+      <td>2018-05-24 20:14:20</td>
+      <td>1</td>
+      <td>30.0</td>
+      <td>1.003184e+18</td>
+      <td>Recordatorio. Mañana comienza el Festa!! 🎉🙌💞 Estáis preparados ARMYs? Yo estoy que me muerdo las uñas. Y tengo ganas de ver el cartel en el metro de Madrid 😍🙊 @BTS_twt #BTS #방탄소년단 #FakeLove8thWin</td>
+      <td>2.0</td>
+      <td>-1.0</td>
+    </tr>
+    <tr>
+      <th>46</th>
+      <td>metro</td>
+      <td>2018-06-20 11:08:53</td>
+      <td>2018-05-24 20:14:20</td>
+      <td>2</td>
+      <td>22.0</td>
+      <td>1.003304e+18</td>
+      <td>✨❤️A todos los ARMYs nuevos❤️✨ Disfrutad muchísimos de este #BTSFESTA2018 😘 Y si sois de España, recordaros que este año y gracias a las chicas @BeyondtheSpain España se suma con un regalazo a ARMY y @BTS_twt al tener marquesina en el metro de Madrid 😍😍</td>
+      <td>3.0</td>
+      <td>-1.0</td>
+    </tr>
+    <tr>
+      <th>47</th>
+      <td>metro</td>
+      <td>2018-06-20 11:08:53</td>
+      <td>2018-05-24 20:14:20</td>
+      <td>3</td>
+      <td>20.0</td>
+      <td>1.003352e+18</td>
+      <td>@El1escribidor @AtilaAllboys Aquí en España ya murieron 3 trabajadores del metro de Madrid a consecuencia del asbesto, Tanto el imbécil que se acaba de ir de aquí como el que aún está allá son responsables de las muertes españolas como de las que habrá en Argentina</td>
+      <td>2.0</td>
+      <td>-2.0</td>
+    </tr>
+    <tr>
+      <th>48</th>
+      <td>metro</td>
+      <td>2018-06-20 11:08:53</td>
+      <td>2018-05-24 20:14:20</td>
+      <td>4</td>
+      <td>15.0</td>
+      <td>1.003224e+18</td>
+      <td>Según @AEMET_CValencia esta madrugada es el cuarto episodio de lluvias más intenso en Valencia en un mes de junio desde que se registra en la serie histórica @GVA112 @InfoAdif @metrovalencia</td>
+      <td>3.0</td>
+      <td>-1.0</td>
+    </tr>
+    <tr>
+      <th>49</th>
+      <td>metro</td>
+      <td>2018-06-20 11:08:53</td>
+      <td>2018-05-24 20:14:20</td>
+      <td>5</td>
+      <td>11.0</td>
+      <td>1.003542e+18</td>
+      <td>Este miércoles te esperamos para correr y disfrutar juntos el Global @runningday! Solo necesitas zapatillas y ganas! 📅⏰ 6 junio - 19h 📸 19.30 🏃🏻‍♀️🏃🏽‍♂️ 📍 Jardín del Turia (Metro Alameda) 🏁 3-5 km</td>
+      <td>3.0</td>
+      <td>-1.0</td>
+    </tr>
+    <tr>
+      <th>70</th>
+      <td>valenbici</td>
+      <td>2018-06-20 11:08:53</td>
+      <td>2018-05-24 20:14:20</td>
+      <td>1</td>
+      <td>6.0</td>
+      <td>1.003537e+18</td>
+      <td>.@valenbisi_es pierde abonados por cuarto mes consecutivo y apenas supera los 44.000</td>
+      <td>2.0</td>
+      <td>-1.0</td>
+    </tr>
+    <tr>
+      <th>71</th>
+      <td>valenbici</td>
+      <td>2018-06-20 11:08:53</td>
+      <td>2018-05-24 20:14:20</td>
+      <td>2</td>
+      <td>2.0</td>
+      <td>1.004282e+18</td>
+      <td>Atenció a la disponibilitat d'Estacions Valenbisi #EVB. Consultar @biciv i davant de poca disponibilitat de bornetes lliures anar amb temps perquè haureu d'aparcar-la en #EVBs allunyades. RECORDEU que al arribar a una Estació i està plena, passeu la targeta i teniu 15' de bonus.. RT @TransitValencia: Recordem que hui continuen les proves d’accès a la Universitat, pel que s’esperen majors desplaçaments i intensitat circulatòria en els accessos a la @UPV i el Campus dels Tarongers. Preveniu desplaçaments 😉 @AjuntamentVLC @emtvalencia #EBAU2018 #EBAU</td>
+      <td>2.0</td>
+      <td>-1.0</td>
+    </tr>
+    <tr>
+      <th>72</th>
+      <td>valenbici</td>
+      <td>2018-06-20 11:08:53</td>
+      <td>2018-05-24 20:14:20</td>
+      <td>3</td>
+      <td>1.0</td>
+      <td>1.003294e+18</td>
+      <td>@valenbisi_es @emtvalencia @metrovalencia S'ha quedat un dia preciós per anar en bici</td>
+      <td>1.0</td>
+      <td>-1.0</td>
+    </tr>
+    <tr>
+      <th>73</th>
+      <td>valenbici</td>
+      <td>2018-06-20 11:08:53</td>
+      <td>2018-05-24 20:14:20</td>
+      <td>4</td>
+      <td>1.0</td>
+      <td>1.003375e+18</td>
+      <td>Buenas noticias desde @AytoAlfafar 😄 Si conocéis buenas noticias del área metropolitana y cercanas a València para ampliar las vías ciclables compartirlo con nosotros, ¡gracias! RT @RedCiudadesBici: Alfafar: El proyecto del carril bici obtiene subvención europea</td>
+      <td>3.0</td>
+      <td>-1.0</td>
+    </tr>
+    <tr>
+      <th>74</th>
+      <td>valenbici</td>
+      <td>2018-06-20 11:08:53</td>
+      <td>2018-05-24 20:14:20</td>
+      <td>5</td>
+      <td>1.0</td>
+      <td>1.002516e+18</td>
+      <td>@taxivoltereta @joanribo @policialocalvlc @ciclismoafondo Un punto interesante en las Estaciones Valenbisi sería si al elegir un idioma que no sea español / valenciano y/o a los nuevos turistas de corta duración les apareciera consignas de seguridad y educación vial antes de desbloquear las bornetas @ValenbisiOfi @VlcMobilitat</td>
+      <td>4.0</td>
+      <td>-2.0</td>
+    </tr>
+  </tbody>
+</table>
+        <h2>TOP TWITTERS - Top users as defined by the ammount of tweets in a given time period and label</h2>
+        <table class="table table-striped">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>QueryLabel</th>
+      <th>TimeStart</th>
+      <th>TimeStop</th>
+      <th>Top</th>
+      <th>Amount</th>
+      <th>UserID</th>
+      <th>Median Positive Sentiment</th>
+      <th>Max Positive Sentiment</th>
+      <th>Median Negative Sentiment</th>
+      <th>Max Negative Sentiment</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>emt</td>
+      <td>2018-06-28 11:08:53</td>
+      <td>2018-06-27 23:08:54</td>
+      <td>1</td>
+      <td>12.0</td>
+      <td>@emtvalencia</td>
+      <td>1.0</td>
+      <td>4.0</td>
+      <td>-1.0</td>
+      <td>-3.0</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>emt</td>
+      <td>2018-06-28 11:08:53</td>
+      <td>2018-06-27 23:08:54</td>
+      <td>2</td>
+      <td>3.0</td>
+      <td>@alberoabogada</td>
+      <td>1.0</td>
+      <td>2.0</td>
+      <td>-1.0</td>
+      <td>-2.0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>emt</td>
+      <td>2018-06-28 11:08:53</td>
+      <td>2018-06-27 23:08:54</td>
+      <td>3</td>
+      <td>2.0</td>
+      <td>@CsValencia_C</td>
+      <td>2.5</td>
+      <td>3.0</td>
+      <td>-2.0</td>
+      <td>-3.0</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>emt</td>
+      <td>2018-06-28 11:08:53</td>
+      <td>2018-06-27 23:08:54</td>
+      <td>4</td>
+      <td>2.0</td>
+      <td>@TransitValencia</td>
+      <td>2.0</td>
+      <td>3.0</td>
+      <td>-1.0</td>
+      <td>-1.0</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>emt</td>
+      <td>2018-06-28 11:08:53</td>
+      <td>2018-06-27 23:08:54</td>
+      <td>5</td>
+      <td>2.0</td>
+      <td>@jgmb65</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>-3.0</td>
+      <td>-4.0</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>emt</td>
+      <td>2018-06-27 23:08:53</td>
+      <td>2018-06-26 11:08:54</td>
+      <td>1</td>
+      <td>10.0</td>
+      <td>@emtvalencia</td>
+      <td>1.0</td>
+      <td>3.0</td>
+      <td>-1.5</td>
+      <td>-3.0</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>emt</td>
+      <td>2018-06-27 23:08:53</td>
+      <td>2018-06-26 11:08:54</td>
+      <td>2</td>
+      <td>4.0</td>
+      <td>@qja1j</td>
+      <td>2.5</td>
+      <td>3.0</td>
+      <td>-2.5</td>
+      <td>-4.0</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>emt</td>
+      <td>2018-06-27 23:08:53</td>
+      <td>2018-06-26 11:08:54</td>
+      <td>3</td>
+      <td>3.0</td>
+      <td>@TransitValencia</td>
+      <td>1.0</td>
+      <td>2.0</td>
+      <td>-1.0</td>
+      <td>-1.0</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>emt</td>
+      <td>2018-06-27 23:08:53</td>
+      <td>2018-06-26 11:08:54</td>
+      <td>4</td>
+      <td>2.0</td>
+      <td>@rafaelchecafos</td>
+      <td>2.0</td>
+      <td>3.0</td>
+      <td>-3.0</td>
+      <td>-5.0</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>emt</td>
+      <td>2018-06-27 23:08:53</td>
+      <td>2018-06-26 11:08:54</td>
+      <td>5</td>
+      <td>2.0</td>
+      <td>@juanmagarm</td>
+      <td>1.5</td>
+      <td>2.0</td>
+      <td>-1.5</td>
+      <td>-2.0</td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td>emt</td>
+      <td>2018-06-20 11:08:53</td>
+      <td>2018-05-24 20:14:20</td>
+      <td>1</td>
+      <td>131.0</td>
+      <td>@TransitValencia</td>
+      <td>1.0</td>
+      <td>3.0</td>
+      <td>-1.0</td>
+      <td>-3.0</td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td>emt</td>
+      <td>2018-06-20 11:08:53</td>
+      <td>2018-05-24 20:14:20</td>
+      <td>2</td>
+      <td>130.0</td>
+      <td>@emtvalencia</td>
+      <td>1.0</td>
+      <td>4.0</td>
+      <td>-1.0</td>
+      <td>-4.0</td>
+    </tr>
+    <tr>
+      <th>22</th>
+      <td>emt</td>
+      <td>2018-06-20 11:08:53</td>
+      <td>2018-05-24 20:14:20</td>
+      <td>3</td>
+      <td>23.0</td>
+      <td>@vlcextra</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>-1.0</td>
+      <td>-1.0</td>
+    </tr>
+    <tr>
+      <th>23</th>
+      <td>emt</td>
+      <td>2018-06-20 11:08:53</td>
+      <td>2018-05-24 20:14:20</td>
+      <td>4</td>
+      <td>18.0</td>
+      <td>@giuseppegrezzi</td>
+      <td>1.0</td>
+      <td>5.0</td>
+      <td>-1.0</td>
+      <td>-3.0</td>
+    </tr>
+    <tr>
+      <th>24</th>
+      <td>emt</td>
+      <td>2018-06-20 11:08:53</td>
+      <td>2018-05-24 20:14:20</td>
+      <td>5</td>
+      <td>14.0</td>
+      <td>@lasprovincias</td>
+      <td>1.0</td>
+      <td>2.0</td>
+      <td>-2.0</td>
+      <td>-3.0</td>
+    </tr>
+    <tr>
+      <th>25</th>
+      <td>metro</td>
+      <td>2018-06-28 11:08:53</td>
+      <td>2018-06-27 23:08:54</td>
+      <td>1</td>
+      <td>2.0</td>
+      <td>@TYPSAGroup</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>-1.0</td>
+      <td>-1.0</td>
+    </tr>
+    <tr>
+      <th>26</th>
+      <td>metro</td>
+      <td>2018-06-28 11:08:53</td>
+      <td>2018-06-27 23:08:54</td>
+      <td>2</td>
+      <td>2.0</td>
+      <td>@YgGregory</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>-1.0</td>
+      <td>-1.0</td>
+    </tr>
+    <tr>
+      <th>27</th>
+      <td>metro</td>
+      <td>2018-06-28 11:08:53</td>
+      <td>2018-06-27 23:08:54</td>
+      <td>3</td>
+      <td>1.0</td>
+      <td>@Derek_Catbcn</td>
+      <td>3.0</td>
+      <td>3.0</td>
+      <td>-4.0</td>
+      <td>-4.0</td>
+    </tr>
+    <tr>
+      <th>28</th>
+      <td>metro</td>
+      <td>2018-06-28 11:08:53</td>
+      <td>2018-06-27 23:08:54</td>
+      <td>4</td>
+      <td>1.0</td>
+      <td>@DraculaMetro</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>-3.0</td>
+      <td>-3.0</td>
+    </tr>
+    <tr>
+      <th>29</th>
+      <td>metro</td>
+      <td>2018-06-28 11:08:53</td>
+      <td>2018-06-27 23:08:54</td>
+      <td>5</td>
+      <td>1.0</td>
+      <td>@JaRodmin</td>
+      <td>2.0</td>
+      <td>2.0</td>
+      <td>-2.0</td>
+      <td>-2.0</td>
+    </tr>
+    <tr>
+      <th>30</th>
+      <td>metro</td>
+      <td>2018-06-27 23:08:53</td>
+      <td>2018-06-26 11:08:54</td>
+      <td>1</td>
+      <td>3.0</td>
+      <td>@CAMETROVALENCIA</td>
+      <td>2.0</td>
+      <td>3.0</td>
+      <td>-1.0</td>
+      <td>-2.0</td>
+    </tr>
+    <tr>
+      <th>31</th>
+      <td>metro</td>
+      <td>2018-06-27 23:08:53</td>
+      <td>2018-06-26 11:08:54</td>
+      <td>2</td>
+      <td>1.0</td>
+      <td>@ActibiciVlc</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>-1.0</td>
+      <td>-1.0</td>
+    </tr>
+    <tr>
+      <th>32</th>
+      <td>metro</td>
+      <td>2018-06-27 23:08:53</td>
+      <td>2018-06-26 11:08:54</td>
+      <td>3</td>
+      <td>1.0</td>
+      <td>@carolmola</td>
+      <td>2.0</td>
+      <td>2.0</td>
+      <td>-1.0</td>
+      <td>-1.0</td>
+    </tr>
+    <tr>
+      <th>33</th>
+      <td>metro</td>
+      <td>2018-06-27 23:08:53</td>
+      <td>2018-06-26 11:08:54</td>
+      <td>4</td>
+      <td>1.0</td>
+      <td>@splendid1040</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>-1.0</td>
+      <td>-1.0</td>
+    </tr>
+    <tr>
+      <th>34</th>
+      <td>metro</td>
+      <td>2018-06-27 23:08:53</td>
+      <td>2018-06-26 11:08:54</td>
+      <td>5</td>
+      <td>1.0</td>
+      <td>@rouxrizos_5</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>-1.0</td>
+      <td>-1.0</td>
+    </tr>
+    <tr>
+      <th>35</th>
+      <td>metro</td>
+      <td>2018-06-26 11:08:53</td>
+      <td>2018-06-24 11:08:54</td>
+      <td>1</td>
+      <td>3.0</td>
+      <td>@iGuido141</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>-2.0</td>
+      <td>-4.0</td>
+    </tr>
+    <tr>
+      <th>36</th>
+      <td>metro</td>
+      <td>2018-06-26 11:08:53</td>
+      <td>2018-06-24 11:08:54</td>
+      <td>2</td>
+      <td>2.0</td>
+      <td>@20mValencia</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>-1.0</td>
+      <td>-1.0</td>
+    </tr>
+    <tr>
+      <th>37</th>
+      <td>metro</td>
+      <td>2018-06-26 11:08:53</td>
+      <td>2018-06-24 11:08:54</td>
+      <td>3</td>
+      <td>2.0</td>
+      <td>@luis_ernesto_35</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>-2.0</td>
+      <td>-2.0</td>
+    </tr>
+    <tr>
+      <th>38</th>
+      <td>metro</td>
+      <td>2018-06-26 11:08:53</td>
+      <td>2018-06-24 11:08:54</td>
+      <td>4</td>
+      <td>2.0</td>
+      <td>@leon_montao</td>
+      <td>3.0</td>
+      <td>5.0</td>
+      <td>-2.0</td>
+      <td>-2.0</td>
+    </tr>
+    <tr>
+      <th>39</th>
+      <td>metro</td>
+      <td>2018-06-26 11:08:53</td>
+      <td>2018-06-24 11:08:54</td>
+      <td>5</td>
+      <td>2.0</td>
+      <td>@juanmoreno6227</td>
+      <td>2.5</td>
+      <td>3.0</td>
+      <td>-2.5</td>
+      <td>-4.0</td>
+    </tr>
+    <tr>
+      <th>40</th>
+      <td>metro</td>
+      <td>2018-06-24 11:08:53</td>
+      <td>2018-06-20 11:08:54</td>
+      <td>1</td>
+      <td>1.0</td>
+      <td>@Benjamindamilo2</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>-1.0</td>
+      <td>-1.0</td>
+    </tr>
+    <tr>
+      <th>41</th>
+      <td>metro</td>
+      <td>2018-06-24 11:08:53</td>
+      <td>2018-06-20 11:08:54</td>
+      <td>2</td>
+      <td>1.0</td>
+      <td>@Cleansheet</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>-1.0</td>
+      <td>-1.0</td>
+    </tr>
+    <tr>
+      <th>42</th>
+      <td>metro</td>
+      <td>2018-06-24 11:08:53</td>
+      <td>2018-06-20 11:08:54</td>
+      <td>3</td>
+      <td>1.0</td>
+      <td>@FrantottiYT</td>
+      <td>2.0</td>
+      <td>2.0</td>
+      <td>-2.0</td>
+      <td>-2.0</td>
+    </tr>
+    <tr>
+      <th>43</th>
+      <td>metro</td>
+      <td>2018-06-24 11:08:53</td>
+      <td>2018-06-20 11:08:54</td>
+      <td>4</td>
+      <td>1.0</td>
+      <td>@Javiersiitoh</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>-3.0</td>
+      <td>-3.0</td>
+    </tr>
+    <tr>
+      <th>44</th>
+      <td>metro</td>
+      <td>2018-06-24 11:08:53</td>
+      <td>2018-06-20 11:08:54</td>
+      <td>5</td>
+      <td>1.0</td>
+      <td>@ManUtdLatestCom</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>-1.0</td>
+      <td>-1.0</td>
+    </tr>
+    <tr>
+      <th>45</th>
+      <td>metro</td>
+      <td>2018-06-20 11:08:53</td>
+      <td>2018-05-24 20:14:20</td>
+      <td>1</td>
+      <td>19.0</td>
+      <td>@metrovalencia</td>
+      <td>1.0</td>
+      <td>3.0</td>
+      <td>-1.0</td>
+      <td>-3.0</td>
+    </tr>
+    <tr>
+      <th>46</th>
+      <td>metro</td>
+      <td>2018-06-20 11:08:53</td>
+      <td>2018-05-24 20:14:20</td>
+      <td>2</td>
+      <td>11.0</td>
+      <td>@_OfficialPress</td>
+      <td>1.0</td>
+      <td>4.0</td>
+      <td>-1.0</td>
+      <td>-3.0</td>
+    </tr>
+    <tr>
+      <th>47</th>
+      <td>metro</td>
+      <td>2018-06-20 11:08:53</td>
+      <td>2018-05-24 20:14:20</td>
+      <td>3</td>
+      <td>8.0</td>
+      <td>@GVAhabitatge</td>
+      <td>1.5</td>
+      <td>5.0</td>
+      <td>-1.0</td>
+      <td>-3.0</td>
+    </tr>
+    <tr>
+      <th>48</th>
+      <td>metro</td>
+      <td>2018-06-20 11:08:53</td>
+      <td>2018-05-24 20:14:20</td>
+      <td>4</td>
+      <td>6.0</td>
+      <td>@giuseppegrezzi</td>
+      <td>2.5</td>
+      <td>3.0</td>
+      <td>-1.0</td>
+      <td>-2.0</td>
+    </tr>
+    <tr>
+      <th>49</th>
+      <td>metro</td>
+      <td>2018-06-20 11:08:53</td>
+      <td>2018-05-24 20:14:20</td>
+      <td>5</td>
+      <td>5.0</td>
+      <td>@FerrocarrilVLC</td>
+      <td>1.0</td>
+      <td>4.0</td>
+      <td>-1.0</td>
+      <td>-3.0</td>
+    </tr>
+    <tr>
+      <th>70</th>
+      <td>valenbici</td>
+      <td>2018-06-20 11:08:53</td>
+      <td>2018-05-24 20:14:20</td>
+      <td>1</td>
+      <td>23.0</td>
+      <td>@valenbisi_es</td>
+      <td>2.0</td>
+      <td>5.0</td>
+      <td>-1.0</td>
+      <td>-4.0</td>
+    </tr>
+    <tr>
+      <th>71</th>
+      <td>valenbici</td>
+      <td>2018-06-20 11:08:53</td>
+      <td>2018-05-24 20:14:20</td>
+      <td>2</td>
+      <td>4.0</td>
+      <td>@qja1j</td>
+      <td>3.0</td>
+      <td>5.0</td>
+      <td>-2.0</td>
+      <td>-4.0</td>
+    </tr>
+    <tr>
+      <th>72</th>
+      <td>valenbici</td>
+      <td>2018-06-20 11:08:53</td>
+      <td>2018-05-24 20:14:20</td>
+      <td>3</td>
+      <td>2.0</td>
+      <td>@Ken43Block_</td>
+      <td>3.0</td>
+      <td>4.0</td>
+      <td>-1.0</td>
+      <td>-1.0</td>
+    </tr>
+    <tr>
+      <th>73</th>
+      <td>valenbici</td>
+      <td>2018-06-20 11:08:53</td>
+      <td>2018-05-24 20:14:20</td>
+      <td>4</td>
+      <td>2.0</td>
+      <td>@marionohales</td>
+      <td>1.5</td>
+      <td>2.0</td>
+      <td>-2.0</td>
+      <td>-2.0</td>
+    </tr>
+    <tr>
+      <th>74</th>
+      <td>valenbici</td>
+      <td>2018-06-20 11:08:53</td>
+      <td>2018-05-24 20:14:20</td>
+      <td>5</td>
+      <td>1.0</td>
+      <td>@AMELIA_SP78</td>
+      <td>5.0</td>
+      <td>5.0</td>
+      <td>-3.0</td>
+      <td>-3.0</td>
+    </tr>
+  </tbody>
+</table>
+        <h2>TOP INFLUENCERS - Top users as defined by the ammount of followers in a given time period and label</h2>
+        <table class="table table-striped">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>QueryLabel</th>
+      <th>TimeStart</th>
+      <th>TimeStop</th>
+      <th>Top</th>
+      <th>Followers</th>
+      <th>UserID</th>
+      <th>Median Positive Sentiment</th>
+      <th>Max Positive Sentiment</th>
+      <th>Median Negative Sentiment</th>
+      <th>Max Negative Sentiment</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>emt</td>
+      <td>2018-06-28 11:08:53</td>
+      <td>2018-06-27 23:08:54</td>
+      <td>1</td>
+      <td>32360.0</td>
+      <td>@Valenciaturismo</td>
+      <td>3.0</td>
+      <td>3.0</td>
+      <td>-4.0</td>
+      <td>-4.0</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>emt</td>
+      <td>2018-06-28 11:08:53</td>
+      <td>2018-06-27 23:08:54</td>
+      <td>2</td>
+      <td>11436.0</td>
+      <td>@TransitValencia</td>
+      <td>2.0</td>
+      <td>3.0</td>
+      <td>-1.0</td>
+      <td>-1.0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>emt</td>
+      <td>2018-06-28 11:08:53</td>
+      <td>2018-06-27 23:08:54</td>
+      <td>3</td>
+      <td>9667.0</td>
+      <td>@emtvalencia</td>
+      <td>1.0</td>
+      <td>4.0</td>
+      <td>-1.0</td>
+      <td>-3.0</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>emt</td>
+      <td>2018-06-28 11:08:53</td>
+      <td>2018-06-27 23:08:54</td>
+      <td>4</td>
+      <td>8197.0</td>
+      <td>@CsValencia_C</td>
+      <td>2.5</td>
+      <td>3.0</td>
+      <td>-2.0</td>
+      <td>-3.0</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>emt</td>
+      <td>2018-06-28 11:08:53</td>
+      <td>2018-06-27 23:08:54</td>
+      <td>5</td>
+      <td>5252.0</td>
+      <td>@Ferran</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>-2.0</td>
+      <td>-2.0</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>emt</td>
+      <td>2018-06-27 23:08:53</td>
+      <td>2018-06-26 11:08:54</td>
+      <td>1</td>
+      <td>215599.0</td>
+      <td>@levante_emv</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>-1.0</td>
+      <td>-1.0</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>emt</td>
+      <td>2018-06-27 23:08:53</td>
+      <td>2018-06-26 11:08:54</td>
+      <td>2</td>
+      <td>15555.0</td>
+      <td>@AjuntamentVLC</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>-1.0</td>
+      <td>-1.0</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>emt</td>
+      <td>2018-06-27 23:08:53</td>
+      <td>2018-06-26 11:08:54</td>
+      <td>3</td>
+      <td>11436.0</td>
+      <td>@TransitValencia</td>
+      <td>1.0</td>
+      <td>2.0</td>
+      <td>-1.0</td>
+      <td>-1.0</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>emt</td>
+      <td>2018-06-27 23:08:53</td>
+      <td>2018-06-26 11:08:54</td>
+      <td>4</td>
+      <td>9667.0</td>
+      <td>@emtvalencia</td>
+      <td>1.0</td>
+      <td>3.0</td>
+      <td>-1.5</td>
+      <td>-3.0</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>emt</td>
+      <td>2018-06-27 23:08:53</td>
+      <td>2018-06-26 11:08:54</td>
+      <td>5</td>
+      <td>8976.0</td>
+      <td>@elperiodicoaqui</td>
+      <td>4.0</td>
+      <td>4.0</td>
+      <td>-1.0</td>
+      <td>-1.0</td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td>emt</td>
+      <td>2018-06-20 11:08:53</td>
+      <td>2018-05-24 20:14:20</td>
+      <td>1</td>
+      <td>215485.0</td>
+      <td>@levante_emv</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>-1.0</td>
+      <td>-1.0</td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td>emt</td>
+      <td>2018-06-20 11:08:53</td>
+      <td>2018-05-24 20:14:20</td>
+      <td>2</td>
+      <td>169148.0</td>
+      <td>@lasprovincias</td>
+      <td>1.0</td>
+      <td>2.0</td>
+      <td>-2.0</td>
+      <td>-3.0</td>
+    </tr>
+    <tr>
+      <th>22</th>
+      <td>emt</td>
+      <td>2018-06-20 11:08:53</td>
+      <td>2018-05-24 20:14:20</td>
+      <td>3</td>
+      <td>153064.0</td>
+      <td>@EMTmadrid</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>-1.0</td>
+      <td>-1.0</td>
+    </tr>
+    <tr>
+      <th>23</th>
+      <td>emt</td>
+      <td>2018-06-20 11:08:53</td>
+      <td>2018-05-24 20:14:20</td>
+      <td>4</td>
+      <td>93427.0</td>
+      <td>@valenciaplaza</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>-1.0</td>
+      <td>-1.0</td>
+    </tr>
+    <tr>
+      <th>24</th>
+      <td>emt</td>
+      <td>2018-06-20 11:08:53</td>
+      <td>2018-05-24 20:14:20</td>
+      <td>5</td>
+      <td>92284.0</td>
+      <td>@joanribo</td>
+      <td>2.0</td>
+      <td>2.0</td>
+      <td>-1.0</td>
+      <td>-1.0</td>
+    </tr>
+    <tr>
+      <th>25</th>
+      <td>metro</td>
+      <td>2018-06-28 11:08:53</td>
+      <td>2018-06-27 23:08:54</td>
+      <td>1</td>
+      <td>1471.0</td>
+      <td>@goe_manogu</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>-1.0</td>
+      <td>-1.0</td>
+    </tr>
+    <tr>
+      <th>26</th>
+      <td>metro</td>
+      <td>2018-06-28 11:08:53</td>
+      <td>2018-06-27 23:08:54</td>
+      <td>2</td>
+      <td>1031.0</td>
+      <td>@YgGregory</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>-1.0</td>
+      <td>-1.0</td>
+    </tr>
+    <tr>
+      <th>27</th>
+      <td>metro</td>
+      <td>2018-06-28 11:08:53</td>
+      <td>2018-06-27 23:08:54</td>
+      <td>3</td>
+      <td>896.0</td>
+      <td>@TYPSAGroup</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>-1.0</td>
+      <td>-1.0</td>
+    </tr>
+    <tr>
+      <th>28</th>
+      <td>metro</td>
+      <td>2018-06-28 11:08:53</td>
+      <td>2018-06-27 23:08:54</td>
+      <td>4</td>
+      <td>621.0</td>
+      <td>@JemuneG</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>-1.0</td>
+      <td>-1.0</td>
+    </tr>
+    <tr>
+      <th>29</th>
+      <td>metro</td>
+      <td>2018-06-28 11:08:53</td>
+      <td>2018-06-27 23:08:54</td>
+      <td>5</td>
+      <td>390.0</td>
+      <td>@krenyre</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>-2.0</td>
+      <td>-2.0</td>
+    </tr>
+    <tr>
+      <th>30</th>
+      <td>metro</td>
+      <td>2018-06-27 23:08:53</td>
+      <td>2018-06-26 11:08:54</td>
+      <td>1</td>
+      <td>23154.0</td>
+      <td>@splendid1040</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>-1.0</td>
+      <td>-1.0</td>
+    </tr>
+    <tr>
+      <th>31</th>
+      <td>metro</td>
+      <td>2018-06-27 23:08:53</td>
+      <td>2018-06-26 11:08:54</td>
+      <td>2</td>
+      <td>13426.0</td>
+      <td>@carolmola</td>
+      <td>2.0</td>
+      <td>2.0</td>
+      <td>-1.0</td>
+      <td>-1.0</td>
+    </tr>
+    <tr>
+      <th>32</th>
+      <td>metro</td>
+      <td>2018-06-27 23:08:53</td>
+      <td>2018-06-26 11:08:54</td>
+      <td>3</td>
+      <td>9010.0</td>
+      <td>@CAMETROVALENCIA</td>
+      <td>2.0</td>
+      <td>3.0</td>
+      <td>-1.0</td>
+      <td>-2.0</td>
+    </tr>
+    <tr>
+      <th>33</th>
+      <td>metro</td>
+      <td>2018-06-27 23:08:53</td>
+      <td>2018-06-26 11:08:54</td>
+      <td>4</td>
+      <td>8396.0</td>
+      <td>@leon_montao</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>-2.0</td>
+      <td>-2.0</td>
+    </tr>
+    <tr>
+      <th>34</th>
+      <td>metro</td>
+      <td>2018-06-27 23:08:53</td>
+      <td>2018-06-26 11:08:54</td>
+      <td>5</td>
+      <td>5000.0</td>
+      <td>@Hartmannmora</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>-2.0</td>
+      <td>-2.0</td>
+    </tr>
+    <tr>
+      <th>35</th>
+      <td>metro</td>
+      <td>2018-06-26 11:08:53</td>
+      <td>2018-06-24 11:08:54</td>
+      <td>1</td>
+      <td>695356.0</td>
+      <td>@trafficVALENCIA</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>-1.0</td>
+      <td>-1.0</td>
+    </tr>
+    <tr>
+      <th>36</th>
+      <td>metro</td>
+      <td>2018-06-26 11:08:53</td>
+      <td>2018-06-24 11:08:54</td>
+      <td>2</td>
+      <td>27881.0</td>
+      <td>@elkloden</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>-1.0</td>
+      <td>-1.0</td>
+    </tr>
+    <tr>
+      <th>37</th>
+      <td>metro</td>
+      <td>2018-06-26 11:08:53</td>
+      <td>2018-06-24 11:08:54</td>
+      <td>3</td>
+      <td>9010.0</td>
+      <td>@CAMETROVALENCIA</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>-1.0</td>
+      <td>-1.0</td>
+    </tr>
+    <tr>
+      <th>38</th>
+      <td>metro</td>
+      <td>2018-06-26 11:08:53</td>
+      <td>2018-06-24 11:08:54</td>
+      <td>4</td>
+      <td>8396.0</td>
+      <td>@leon_montao</td>
+      <td>3.0</td>
+      <td>5.0</td>
+      <td>-2.0</td>
+      <td>-2.0</td>
+    </tr>
+    <tr>
+      <th>39</th>
+      <td>metro</td>
+      <td>2018-06-26 11:08:53</td>
+      <td>2018-06-24 11:08:54</td>
+      <td>5</td>
+      <td>7112.0</td>
+      <td>@polibueno691</td>
+      <td>2.0</td>
+      <td>2.0</td>
+      <td>-1.0</td>
+      <td>-1.0</td>
+    </tr>
+    <tr>
+      <th>40</th>
+      <td>metro</td>
+      <td>2018-06-24 11:08:53</td>
+      <td>2018-06-20 11:08:54</td>
+      <td>1</td>
+      <td>67722.0</td>
+      <td>@fbb888</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>-1.0</td>
+      <td>-1.0</td>
+    </tr>
+    <tr>
+      <th>41</th>
+      <td>metro</td>
+      <td>2018-06-24 11:08:53</td>
+      <td>2018-06-20 11:08:54</td>
+      <td>2</td>
+      <td>64612.0</td>
+      <td>@fbbbetf</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>-1.0</td>
+      <td>-1.0</td>
+    </tr>
+    <tr>
+      <th>42</th>
+      <td>metro</td>
+      <td>2018-06-24 11:08:53</td>
+      <td>2018-06-20 11:08:54</td>
+      <td>3</td>
+      <td>28166.0</td>
+      <td>@fbbsix</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>-1.0</td>
+      <td>-1.0</td>
+    </tr>
+    <tr>
+      <th>43</th>
+      <td>metro</td>
+      <td>2018-06-24 11:08:53</td>
+      <td>2018-06-20 11:08:54</td>
+      <td>4</td>
+      <td>4291.0</td>
+      <td>@ManUtdLatestCom</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>-1.0</td>
+      <td>-1.0</td>
+    </tr>
+    <tr>
+      <th>44</th>
+      <td>metro</td>
+      <td>2018-06-24 11:08:53</td>
+      <td>2018-06-20 11:08:54</td>
+      <td>5</td>
+      <td>1579.0</td>
+      <td>@euroturismo</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>-1.0</td>
+      <td>-1.0</td>
+    </tr>
+    <tr>
+      <th>45</th>
+      <td>metro</td>
+      <td>2018-06-20 11:08:53</td>
+      <td>2018-05-24 20:14:20</td>
+      <td>1</td>
+      <td>169107.0</td>
+      <td>@lasprovincias</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>-1.0</td>
+      <td>-1.0</td>
+    </tr>
+    <tr>
+      <th>46</th>
+      <td>metro</td>
+      <td>2018-06-20 11:08:53</td>
+      <td>2018-05-24 20:14:20</td>
+      <td>2</td>
+      <td>93440.0</td>
+      <td>@valenciaplaza</td>
+      <td>1.0</td>
+      <td>3.0</td>
+      <td>-3.0</td>
+      <td>-4.0</td>
+    </tr>
+    <tr>
+      <th>47</th>
+      <td>metro</td>
+      <td>2018-06-20 11:08:53</td>
+      <td>2018-05-24 20:14:20</td>
+      <td>3</td>
+      <td>18437.0</td>
+      <td>@SERvalencia</td>
+      <td>2.0</td>
+      <td>3.0</td>
+      <td>-1.0</td>
+      <td>-1.0</td>
+    </tr>
+    <tr>
+      <th>48</th>
+      <td>metro</td>
+      <td>2018-06-20 11:08:53</td>
+      <td>2018-05-24 20:14:20</td>
+      <td>4</td>
+      <td>18275.0</td>
+      <td>@metrovalencia</td>
+      <td>1.0</td>
+      <td>3.0</td>
+      <td>-1.0</td>
+      <td>-3.0</td>
+    </tr>
+    <tr>
+      <th>49</th>
+      <td>metro</td>
+      <td>2018-06-20 11:08:53</td>
+      <td>2018-05-24 20:14:20</td>
+      <td>5</td>
+      <td>14929.0</td>
+      <td>@AjuntamentVLC</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>-1.0</td>
+      <td>-1.0</td>
+    </tr>
+    <tr>
+      <th>70</th>
+      <td>valenbici</td>
+      <td>2018-06-20 11:08:53</td>
+      <td>2018-05-24 20:14:20</td>
+      <td>1</td>
+      <td>169140.0</td>
+      <td>@lasprovincias</td>
+      <td>2.0</td>
+      <td>2.0</td>
+      <td>-1.0</td>
+      <td>-1.0</td>
+    </tr>
+    <tr>
+      <th>71</th>
+      <td>valenbici</td>
+      <td>2018-06-20 11:08:53</td>
+      <td>2018-05-24 20:14:20</td>
+      <td>2</td>
+      <td>1710.0</td>
+      <td>@valenbisi_es</td>
+      <td>2.0</td>
+      <td>5.0</td>
+      <td>-1.0</td>
+      <td>-4.0</td>
+    </tr>
+    <tr>
+      <th>72</th>
+      <td>valenbici</td>
+      <td>2018-06-20 11:08:53</td>
+      <td>2018-05-24 20:14:20</td>
+      <td>3</td>
+      <td>656.0</td>
+      <td>@jdaros</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>-3.0</td>
+      <td>-3.0</td>
+    </tr>
+    <tr>
+      <th>73</th>
+      <td>valenbici</td>
+      <td>2018-06-20 11:08:53</td>
+      <td>2018-05-24 20:14:20</td>
+      <td>4</td>
+      <td>620.0</td>
+      <td>@valentia1238</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>-1.0</td>
+      <td>-1.0</td>
+    </tr>
+    <tr>
+      <th>74</th>
+      <td>valenbici</td>
+      <td>2018-06-20 11:08:53</td>
+      <td>2018-05-24 20:14:20</td>
+      <td>5</td>
+      <td>417.0</td>
+      <td>@marionohales</td>
+      <td>1.5</td>
+      <td>2.0</td>
+      <td>-2.0</td>
+      <td>-2.0</td>
+    </tr>
+  </tbody>
+</table>
+    </body>
+</html>
