@@ -16,7 +16,7 @@ Observaciones Importantes:
 
 * Para ejecución los ficheros utilizan variables de ambiente definidas en las primeras líneas de código de cada módulo y estas deben ser ajustadas para correcto funcionamiento de la aplicación. 
 
-* La aplicación “sentistrength.jar” utilizada para realizar el análisis de sentimiento, tiene licencia de uso restricta y no es distribuida junto a esta aplicación. Su uso académico es gratuito pero su uso comercial es pago. El código y librerías de distintos idiomas pueden ser obtenidos en por contacto directo el equipo de investigación responsable. Michael Thelwall (wlv.ac.uk) o David Vilares Calvo (udc.es) 
+* La aplicación “sentistrength.jar” utilizada para realizar el análisis de sentimiento, tiene licencia de uso restricta y no es distribuida junto a esta aplicación. Su uso académico es gratuito pero su uso comercial es pago. El código y librerías de distintos idiomas pueden ser obtenidos en por contacto directo el equipo de investigación responsable. El sitio de referencia es http://sentistrength.wlv.ac.uk/. El investihador jefe es Michael Thelwall (http://www.scit.wlv.ac.uk/~cm1993/mycv.html) o David Vilares Calvo (http://www.grupolys.org/~david.vilares/) 
   
 En la carpeta del proyecto se destacan las siguientes subcarpetas: 
 * \InBox: Carpeta donde ficheros CSV deben ser colocados para análisis 
